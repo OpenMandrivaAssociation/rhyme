@@ -1,12 +1,8 @@
-%define	name	rhyme
-%define	version	0.9
-%define	release	2mdk
-
-Summary:	A Rhyming Dictionary
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-License:	GPL
+Summary:	A rhyming dictionary
+Name:		rhyme
+Version:	0.9
+Release:	%mkrel 3
+License:	GPL+
 Group:		Databases
 URL:		http://rhyme.sourceforge.net/
 Source0:	%{name}-%{version}.tar.bz2
@@ -19,7 +15,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 A command-line based rhyming dictionary supporting about 127,000
-english words.
+English words.
 
 %prep
 %setup -q
