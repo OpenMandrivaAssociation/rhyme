@@ -11,7 +11,6 @@ BuildRequires:	python
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	gdbm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 A command-line based rhyming dictionary supporting about 127,000
