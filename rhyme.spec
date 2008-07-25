@@ -1,7 +1,7 @@
 Summary:	A rhyming dictionary
 Name:		rhyme
 Version:	0.9
-Release:	%mkrel 3
+Release:	%mkrel 5
 License:	GPL+
 Group:		Databases
 URL:		http://rhyme.sourceforge.net/
