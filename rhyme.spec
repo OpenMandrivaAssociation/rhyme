@@ -1,12 +1,12 @@
 Summary:	A rhyming dictionary
 Name:		rhyme
 Version:	0.9
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL+
 Group:		Databases
 URL:		http://rhyme.sourceforge.net/
 Source0:	%{name}-%{version}.tar.bz2
-Patch0:		rhyme-0.8-Makefile.patch.bz2
+Patch:      rhyme-0.9-fix-format-errors.patch
 BuildRequires:	python
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
@@ -19,13 +19,13 @@ English words.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch -p 1
 
 # fix strange file perms
 chmod 644 *
 
 %build
-make
+make LIBS='-lgdbm -lreadline -lncurses' FLAGS='%{optflags}'
 
 # Tue Dec 11 2001 Oden Eriksson
 # I suppose it would be possible to do a devel package too,
