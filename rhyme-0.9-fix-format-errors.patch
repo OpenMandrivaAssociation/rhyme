@@ -1,0 +1,12 @@
+diff -Naur rhyme-0.9/setup.c rhyme-0.9-fix-format-errors/setup.c
+--- rhyme-0.9/setup.c	2002-01-14 18:23:22.000000000 +0100
++++ rhyme-0.9-fix-format-errors/setup.c	2009-03-03 16:55:01.000000000 +0100
+@@ -17,7 +17,7 @@
+ };
+ 
+ void fatalError(char s[]) {
+-  fprintf(stderr, s);
++  fprintf(stderr, "%s", s);
+   exit(1);
+ }
+ 
