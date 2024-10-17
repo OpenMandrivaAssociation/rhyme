@@ -4,7 +4,7 @@ Version:	0.9
 Release:	9
 License:	GPL+
 Group:		Databases
-URL:		http://rhyme.sourceforge.net/
+URL:		https://rhyme.sourceforge.net/
 Source0:	%{name}-%{version}.tar.bz2
 Patch:      rhyme-0.9-fix-format-errors.patch
 BuildRequires:	python
