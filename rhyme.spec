@@ -7,6 +7,7 @@ Group:		Databases
 URL:		https://rhyme.sourceforge.net/
 Source0:	%{name}-%{version}.tar.bz2
 Patch:      rhyme-0.9-fix-format-errors.patch
+BuildRequires:	make
 BuildRequires:	python
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
